@@ -21,6 +21,7 @@ duelista(neon).
 duelista(phoenix).
 duelista(yoru).
 duelista(waylay).
+duelista(iso).
 
 % Iniciadores
 iniciador(sova).
@@ -45,3 +46,4 @@ centinela(killjoy).
 centinela(sage).
 centinela(chamber).
 centinela(deadlock).
+centinela(vyse).
