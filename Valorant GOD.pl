@@ -20,6 +20,7 @@ duelista(raze).
 duelista(neon).
 duelista(phoenix).
 duelista(yoru).
+duelista(waylay).
 
 % Iniciadores
 iniciador(sova).
@@ -28,6 +29,7 @@ iniciador(kayo).
 iniciador(skye).
 iniciador(fade).
 iniciador(gekko).
+iniciador(tejo).
 
 % Controladores
 controlador(brimstone).
@@ -35,6 +37,7 @@ controlador(omen).
 controlador(viper).
 controlador(astra).
 controlador(harbor).
+controlador(clove).
 
 % Centinelas
 centinela(cypher).
