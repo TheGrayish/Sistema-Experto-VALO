@@ -12,46 +12,86 @@ mapa(pearl).
 mapa(lotus).
 mapa(sunset).
 
-% Lista de composiciones por mapa
+% -------------------------
+% Lista de composiciones por mapa (Actualizadas según meta 2025)
+% -------------------------
+
 composiciones(ascent, [
-    [jett, sova, omen, killjoy, sage],
-    [jett, sova, omen, cypher, sage],
-    [jett, sova, kayo, omen, killjoy],
-
-    
-    [jett, breach, viper, cypher, chamber],
-    [iso, gekko, astra, killjoy, sage]
+    [jett, omen, sova, kayo, killjoy],   % Meta profesional
+    [jett, omen, sova, killjoy, sage],   % Variación ranked alto
+    [jett, sova, breach, killjoy, omen], % Alternativa EMEA
+    [jett, reyna, omen, killjoy, sova]   % Variación agresiva
 ]).
 
-composiciones(bind, [
-    [raze, skye, brimstone, cypher, viper],
-    [phoenix, kayo, harbor, sage, killjoy]
+composiciones(fracture, [
+    [raze, breach, brimstone, fade, chamber],  % Meta profesional
+    [raze, breach, fade, killjoy, brimstone],  % Variación común
+    [neon, breach, fade, killjoy, harbor],     % Alternativa NA
+    [raze, skye, brimstone, chamber, fade]     % Variación ranked
 ]).
 
-composiciones(pearl, [
-    [yoru, fade, harbor, cypher, sage],
-    [iso, fade, omen, killjoy, chamber]
+composiciones(haven, [
+    [jett, sova, omen, breach, killjoy],   % Configuración profesional
+    [jett, sova, omen, cypher, breach],    % Variación con Cypher
+    [jett, skye, omen, killjoy, kayo],     % Alternativa NA
+    [phoenix, sova, omen, killjoy, breach] % Variación LATAM
+]).
+
+composiciones(icebox, [
+    [jett, sova, viper, sage, killjoy],    % Meta profesional
+    [jett, sova, viper, sage, chamber],   % Variación con Chamber
+    [reyna, sova, viper, sage, killjoy],  % Alternativa ranked
+    [jett, fade, viper, sage, killjoy]     % Variación iniciador alternativo
 ]).
 
 composiciones(lotus, [
-    [iso, fade, astra, clove, chamber],
-    [raze, breach, viper, sage, cypher]
+    [raze, fade, omen, viper, killjoy],    % Meta profesional
+    [raze, fade, harbor, viper, killjoy],  % Variación con Harbor
+    [jett, fade, omen, viper, chamber],    % Alternativa Asia
+    [raze, skye, omen, killjoy, viper]     % Versión simplificada ranked
 ]).
 
+composiciones(pearl, [
+    [jett, fade, astra, chamber, sage],    % Meta profesional
+    [jett, fade, astra, killjoy, sage],    % Variación con Killjoy
+    [raze, fade, harbor, killjoy, sage],   % Alternativa doble controlador
+    [neon, fade, astra, chamber, sage]     % Variación agresiva ranked
+]).
+
+composiciones(split, [
+    [raze, skye, omen, cypher, sage],      % Meta profesional
+    [raze, skye, omen, killjoy, sage],     % Variación con Killjoy
+    [jett, skye, omen, cypher, sage],      % Alternativa con Jett
+    [raze, breach, omen, killjoy, sage]    % Versión EMEA
+]).
+
+composiciones(bind, [
+    [raze, skye, brimstone, cypher, viper],  % Meta clásica
+    [phoenix, kayo, harbor, sage, killjoy],  % Composición alternativa
+    [jett, skye, omen, chamber, viper],      % Variación moderna
+    [neon, fade, harbor, killjoy, sage]       % Estrategia agresiva
+]).
+
+composiciones(sunset, [
+    [jett, sova, omen, killjoy, raze],     % Composición temporal (ejemplo)
+    [iso, fade, astra, clove, chamber],    % Basado en meta emergente
+    [raze, skye, harbor, cypher, sage]     % Estrategia de control
+]).
 
 % -------------------------
-% Agentes y Roles
+% Agentes y Roles (Actualizados)
 % -------------------------
 
+% Duelistas
 duelista(jett).
 duelista(reyna).
 duelista(raze).
 duelista(neon).
 duelista(phoenix).
 duelista(yoru).
-duelista(waylay).
 duelista(iso).
 
+% Iniciadores
 iniciador(sova).
 iniciador(breach).
 iniciador(kayo).
@@ -60,6 +100,7 @@ iniciador(fade).
 iniciador(gekko).
 iniciador(tejo).
 
+% Controladores
 controlador(brimstone).
 controlador(omen).
 controlador(viper).
@@ -67,6 +108,7 @@ controlador(astra).
 controlador(harbor).
 controlador(clove).
 
+% Centinelas
 centinela(cypher).
 centinela(killjoy).
 centinela(sage).
@@ -74,17 +116,21 @@ centinela(chamber).
 centinela(deadlock).
 centinela(vyse).
 
-
 % -------------------------
-% Sinergias destacadas
+% Sinergias destacadas (Ampliadas)
 % -------------------------
 
-sinergia(jett, sova, 'Sova revela y Jett entra agresivo.').
-sinergia(killjoy, sage, 'El hecho de que los 2 sean centilas, sera mas facil defender ya que cada 1 puede defender un site').
-sinergia(raze, skye, 'Skye flashea y Raze limpia el sitio.').
-sinergia(iso, fade, 'Fade marca enemigos e ISO busca 1v1.').
-sinergia(gekko, reyna, 'Gekko molesta con su utilidad y Reyna remata.').
-sinergia(omen, reyna, 'Omen corta visión y Reyna ataca por sorpresa.').
+sinergia(jett, sova, 'Sova revela con dron/flechas y Jett entra con dash/updraft').
+sinergia(raze, skye, 'Skye flashea con Guiding Light mientras Raze usa Boom Bot para limpiar el sitio').
+sinergia(viper, sage, 'Viper divide el sitio con muro tóxico y Sage bloquea rotaciones con muro helado').
+sinergia(fade, breach, 'Fade revela con Prowlers + Breach aturde con Fault Line para entrada coordinada').
+sinergia(omen, chamber, 'Omen cubre con humos mientras Chamber controla ángulos largos con Tour de Force').
+sinergia(astra, killjoy, 'Astra controla zonas con Cosmic Divide + Killjoy asegura área con Lockdown').
+sinergia(neon, breach, 'Breach aturde con Flashpoint y Neon entra velozmente con Relay Bolt').
+sinergia(cypher, sage, 'Cypher vigila flancos con trips + Sage cura y retrasa pushes con Slow Orbs').
+sinergia(harbor, fade, 'Harbor inunda zonas con Cove + Fade revela con Haunt para ejecuciones').
+sinergia(clove, gekko, 'Clove controla visión con smokes + Gekko molesta con Wingman y Dizzy').
+
 
 % Detectar el rol del agente
 rol(Agente, duelista) :- duelista(Agente).
@@ -188,3 +234,4 @@ comparar_con_otros(A1, [A2|Resto]) :-
         write('Sinergia entre '), write(A2), write(' y '), write(A1), write(': '), write(Msg2), nl
     ; true),
     comparar_con_otros(A1, Resto).
+
