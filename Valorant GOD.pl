@@ -1,7 +1,6 @@
 % -------------------------
 % Mapas disponibles
 % -------------------------
-
 mapa(ascent).
 mapa(bind).
 mapa(haven).
@@ -13,69 +12,70 @@ mapa(lotus).
 mapa(sunset).
 
 % -------------------------
-% Lista de composiciones por mapa (Actualizadas según meta 2025)
+% Lista de composiciones por mapa (Actualizadas seg�n meta 2025)
 % -------------------------
 
 composiciones(ascent, [
     [jett, omen, sova, kayo, killjoy],   % Meta profesional
-    [jett, omen, sova, killjoy, sage],   % Variación ranked alto
+    [jett, omen, sova, killjoy, sage],   % Variaci�n ranked alto
     [jett, sova, breach, killjoy, omen], % Alternativa EMEA
-    [jett, reyna, omen, killjoy, sova]   % Variación agresiva
+    [jett, reyna, omen, killjoy, sova]   % Variaci�n agresiva
 ]).
 
 composiciones(fracture, [
     [raze, breach, brimstone, fade, chamber],  % Meta profesional
-    [raze, breach, fade, killjoy, brimstone],  % Variación común
+    [raze, breach, fade, killjoy, brimstone],  % Variaci�n com�n
     [neon, breach, fade, killjoy, harbor],     % Alternativa NA
-    [raze, skye, brimstone, chamber, fade]     % Variación ranked
+    [raze, skye, brimstone, chamber, fade]     % Variaci�n ranked
 ]).
 
 composiciones(haven, [
-    [jett, sova, omen, breach, killjoy],   % Configuración profesional
-    [jett, sova, omen, cypher, breach],    % Variación con Cypher
+    [jett, sova, omen, breach, killjoy],   % Configuraci�n profesional
+    [jett, sova, omen, cypher, breach],    % Variaci�n con Cypher
     [jett, skye, omen, killjoy, kayo],     % Alternativa NA
-    [phoenix, sova, omen, killjoy, breach] % Variación LATAM
+    [phoenix, sova, omen, killjoy, breach] % Variaci�n LATAM
 ]).
 
 composiciones(icebox, [
     [jett, sova, viper, sage, killjoy],    % Meta profesional
-    [jett, sova, viper, sage, chamber],   % Variación con Chamber
+    [jett, sova, viper, sage, chamber],   % Variaci�n con Chamber
     [reyna, sova, viper, sage, killjoy],  % Alternativa ranked
-    [jett, fade, viper, sage, killjoy]     % Variación iniciador alternativo
+    [jett, fade, viper, sage, killjoy]     % Variaci�n iniciador alternativo
 ]).
 
 composiciones(lotus, [
     [raze, fade, omen, viper, killjoy],    % Meta profesional
-    [raze, fade, harbor, viper, killjoy],  % Variación con Harbor
+    [raze, fade, harbor, viper, killjoy],  % Variaci�n con Harbor
     [jett, fade, omen, viper, chamber],    % Alternativa Asia
-    [raze, skye, omen, killjoy, viper]     % Versión simplificada ranked
+    [raze, skye, omen, killjoy, viper]     % Versi�n simplificada ranked
 ]).
 
 composiciones(pearl, [
     [jett, fade, astra, chamber, sage],    % Meta profesional
-    [jett, fade, astra, killjoy, sage],    % Variación con Killjoy
+    [jett, fade, astra, killjoy, sage],    % Variaci�n con Killjoy
     [raze, fade, harbor, killjoy, sage],   % Alternativa doble controlador
-    [neon, fade, astra, chamber, sage]     % Variación agresiva ranked
+    [neon, fade, astra, chamber, sage]     % Variaci�n agresiva ranked
 ]).
 
 composiciones(split, [
     [raze, skye, omen, cypher, sage],      % Meta profesional
-    [raze, skye, omen, killjoy, sage],     % Variación con Killjoy
+    [raze, skye, omen, killjoy, sage],     % Variaci�n con Killjoy
     [jett, skye, omen, cypher, sage],      % Alternativa con Jett
-    [raze, breach, omen, killjoy, sage]    % Versión EMEA
+    [raze, breach, omen, killjoy, sage]    % Versi�n EMEA
 ]).
 
 composiciones(bind, [
-    [raze, skye, brimstone, cypher, viper],  % Meta clásica
-    [phoenix, kayo, harbor, sage, killjoy],  % Composición alternativa
-    [jett, skye, omen, chamber, viper],      % Variación moderna
+    [raze, skye, brimstone, cypher, viper],  % Meta cl�sica
+    [phoenix, kayo, harbor, sage, killjoy],  % Composici�n alternativa
+    [jett, skye, omen, chamber, viper],      % Variaci�n moderna
     [neon, fade, harbor, killjoy, sage]       % Estrategia agresiva
 ]).
 
 composiciones(sunset, [
-    [jett, sova, omen, killjoy, raze],     % Composición temporal (ejemplo)
-    [iso, fade, astra, clove, chamber],    % Basado en meta emergente
-    [raze, skye, harbor, cypher, sage]     % Estrategia de control
+    [tejo, fade, astra, clove, chamber], % Meta profesional
+    [jett, sova, omen, killjoy, raze],   % Composici�n temporal
+    [raze, skye, harbor, cypher, sage],  % Estrategia de control
+    [vyse, fade, omen, killjoy, jett]    % Variaci�n S-tier
 ]).
 
 % -------------------------
@@ -117,121 +117,67 @@ centinela(deadlock).
 centinela(vyse).
 
 % -------------------------
-% Sinergias destacadas (Ampliadas)
+% Tier list de agentes
 % -------------------------
+tier(s_tier, [tejo, clove, raze, vyse]).
+tier(a_tier, [yoru, deadlock, cypher, jett, iso, neon, sova, gekko, killjoy, omen, brimstone, phoenix, sage]).
+tier(b_tier, [chamber, viper, breach, skye, fade, astra, reyna]).
+tier(c_tier, [kayo, harbor]).
 
+% -------------------------
+% Descripciones de mapas
+% -------------------------
+descripcion_mapa(ascent, 'Equilibra poder de entrada, control de mapa e informaci�n. Jett aporta entrada r�pida y uso del Operator, Omen controla �ngulos con sus humos, los iniciadores brindan reconocimiento, y Killjoy asegura la defensa de sitios.').
+descripcion_mapa(fracture, 'Composici�n con alto poder de iniciadores y utilidades de control. Raze aprovecha los �ngulos cerrados, Breach y Fade proporcionan un combo de aturdimiento y revelado, Brimstone coloca humos r�pidos, mientras el centinela controla flancos.').
+descripcion_mapa(haven, 'Al tener tres sitios, exige una composici�n vers�til. Jett es imprescindible para aprovechar las largas l�neas de visi�n, Omen cubre m�ltiples �ngulos, la combinaci�n de Sova y Breach provee informaci�n constante, mientras el centinela ofrece control de flancos.').
+descripcion_mapa(icebox, 'Viper es imprescindible, dividiendo sitios con su Pantalla T�xica. Sage proporciona muro para plantar (especialmente en B) y orbes lentos. Sova despejar espacios largos. Jett puede tomar �ngulos elevados. Killjoy vigila flancos en este mapa de amplias rotaciones.').
+descripcion_mapa(lotus, 'La dupla de controladores Omen + Viper es clave. Raze limpia esquinas estrechas y zonas de las puertas. Fade explora los amplios espacios y conectores del mapa. Killjoy vigila rotaciones a trav�s de las puertas y su definitiva cubre �reas extensas.').
+descripcion_mapa(pearl, 'Astra con sus humos globales puede tapar �ngulos largos. Fade revela enemigos en rincones. Chamber vigila flancos y su definitiva es letal en largas distancias. Jett infiltra y toma duelos de larga distancia. Sage controla Mid Connector o bloquea A Main.').
+descripcion_mapa(split, 'Raze aprovecha sus Blast Packs y granadas en entradas cortas. Skye usa destellos y trailblazer para limpiar esquinas. Omen bloquea visibilidad en puntos clave. Cypher coloca trampas en flancos. Sage levanta muros que bloquean rutas cruciales y ralentiza pushes.').
+descripcion_mapa(bind, 'Mapa con espacios estrechos donde Raze destaca. Brimstone y Viper controlan sitios con humos y toxinas. Skye proporciona informaci�n con sus habilidades. El centinela vigila los teleportadores para evitar flancos.').
+descripcion_mapa(sunset, 'Mapa con m�ltiples niveles donde Jett puede aprovechar su movilidad. Omen coloca humos estrat�gicos. Fade revela posiciones enemigas. Killjoy y Sage controlan �reas clave y aseguran el post-planta.').
+
+% -------------------------
+% Consejos para agentes
+% -------------------------
+consejo_agente(jett, 'Usa Tailwind para entrar r�pido y Cloudburst para cubrir �ngulos. Ideal para operar con AWP.').
+consejo_agente(raze, 'Utiliza Blast Pack para moverte r�pido y Paint Shells para limpiar esquinas. Showstopper es excelente para romper defensas.').
+consejo_agente(phoenix, 'Aprovecha Curveball para cegar y Hot Hands para curar. Run It Back te permite hacer entradas seguras.').
+consejo_agente(reyna, 'Dismiss despu�s de cada eliminaci�n para reposicionarte. Leer es clave para cegar a m�ltiples enemigos.').
+consejo_agente(neon, 'Usa Sprint para rotaciones r�pidas y Slide para entrar a sitios. Fast Lane divide el mapa eficazmente.').
+consejo_agente(yoru, 'Utiliza Fakeout para enga�ar y Gatecrash para flanquear. Dimensional Drift permite reconocimiento seguro.').
+consejo_agente(iso, 'Aprovecha Double Tap para duelos y Kill Contract para aislar objetivos. Contingency es excelente para post-planta.').
+consejo_agente(sova, 'Aprende lineups de Recon Bolt y Shock Dart. Hunters Fury es ideal para limpiar �reas estrechas.').
+consejo_agente(breach, 'Coordina Flashpoint con tu equipo. Aftershock limpia esquinas y Rolling Thunder rompe defensas.').
+consejo_agente(skye, 'Gu�a Trailblazer para informaci�n y Guiding Light para cegar. Seekers revela posiciones enemigas.').
+consejo_agente(kayo, 'FLASH/drive para entradas y ZERO/point para suprimir habilidades. NULL/cmd neutraliza defensas.').
+consejo_agente(fade, 'Usa Haunt para revelar y Prowler para buscar enemigos. Nightfall es excelente para post-planta.').
+consejo_agente(gekko, 'Wingman planta/defusa la spike. Dizzy ciega m�ltiples �ngulos. Thrash limpia posiciones.').
+consejo_agente(tejo, 'Aprovecha Relampago para revelar y Cascada para empujar. Torrente controla �reas amplias.').
+consejo_agente(brimstone, 'Coloca Sky Smoke en puntos clave. Stim Beacon acelera pushes y Orbital Strike asegura post-planta.').
+consejo_agente(viper, 'Toxic Screen divide sitios. Poison Cloud bloquea �ngulos clave. Pit controla post-planta.').
+consejo_agente(omen, 'Dark Cover para humos precisos. Shrouded Step para reposicionamiento. From the Shadows para flanqueos.').
+consejo_agente(astra, 'Gravity Well atrae y vulnera. Nova Pulse aturde grupos. Cosmic Divide divide el mapa.').
+consejo_agente(harbor, 'Cascade bloquea l�neas de visi�n. High Tide crea paredes de agua. Reckoning controla �reas.').
+consejo_agente(clove, 'Pick-Me-Up revive r�pidamente. Meddle desinforma. Not Dead Yet permite jugar agresivo.').
+consejo_agente(killjoy, 'Turret vigila flancos. Alarmbot + Nanoswarm es letal. Lockdown controla sitios enteros.').
+consejo_agente(cypher, 'Trapwire en flancos. Spycam para informaci�n. Neural Theft revela posiciones enemigas.').
+consejo_agente(sage, 'Barrier Wall bloquea entradas. Slow Orb retrasa pushes. Resurrection cambia rondas.').
+consejo_agente(chamber, 'Rendezvous para reposicionamiento r�pido. Trademark vigila flancos. Tour De Force es letal a distancia.').
+consejo_agente(deadlock, 'GravNet bloquea rushes. Sonic Sensor detecta movimiento. Annihilation elimina grupos.').
+consejo_agente(vyse, 'Haunt revela enemigos. Ravenous controla espacio. Nightfall es excelente para post-planta.').
+
+% -------------------------
+% Sinergias entre agentes
+% -------------------------
 sinergia(jett, sova, 'Sova revela con dron/flechas y Jett entra con dash/updraft').
 sinergia(raze, skye, 'Skye flashea con Guiding Light mientras Raze usa Boom Bot para limpiar el sitio').
-sinergia(viper, sage, 'Viper divide el sitio con muro tóxico y Sage bloquea rotaciones con muro helado').
+sinergia(viper, sage, 'Viper divide el sitio con muro t�xico y Sage bloquea rotaciones con muro helado').
 sinergia(fade, breach, 'Fade revela con Prowlers + Breach aturde con Fault Line para entrada coordinada').
-sinergia(omen, chamber, 'Omen cubre con humos mientras Chamber controla ángulos largos con Tour de Force').
-sinergia(astra, killjoy, 'Astra controla zonas con Cosmic Divide + Killjoy asegura área con Lockdown').
+sinergia(omen, chamber, 'Omen cubre con humos mientras Chamber controla �ngulos largos con Tour de Force').
+sinergia(astra, killjoy, 'Astra controla zonas con Cosmic Divide + Killjoy asegura �rea con Lockdown').
 sinergia(neon, breach, 'Breach aturde con Flashpoint y Neon entra velozmente con Relay Bolt').
 sinergia(cypher, sage, 'Cypher vigila flancos con trips + Sage cura y retrasa pushes con Slow Orbs').
 sinergia(harbor, fade, 'Harbor inunda zonas con Cove + Fade revela con Haunt para ejecuciones').
-sinergia(clove, gekko, 'Clove controla visión con smokes + Gekko molesta con Wingman y Dizzy').
-
-
-% Detectar el rol del agente
-rol(Agente, duelista) :- duelista(Agente).
-rol(Agente, iniciador) :- iniciador(Agente).
-rol(Agente, controlador) :- controlador(Agente).
-rol(Agente, centinela) :- centinela(Agente).
-
-% Buscar agentes alternativos por rol en las composiciones de un mapa
-sugerir_agente(Mapa, RolDeseado, Alternativo) :-
-    composiciones(Mapa, Lista),
-    member(Compo, Lista),
-    member(Alternativo, Compo),
-    rol(Alternativo, RolDeseado),
-    !. % Tomamos el primero que cumpla
-
-solicitar_agente_valido(Mapa, Lista, AgenteValido) :-
-    write('¿Con qué agente vas a jugar tú?'), nl,
-    read(Agente),
-    (agente_valido_en_mapa(Agente, Lista) ->
-        AgenteValido = Agente
-    ;
-        (rol(Agente, Rol) ->
-            sugerir_agente(Mapa, Rol, Alternativo),
-            write('Ese agente no está en ninguna composición del mapa. Te sugiero usar otro del mismo rol como: '), write(Alternativo), nl,
-            solicitar_agente_valido(Mapa, Lista, AgenteValido)
-        ;
-            write('Ese agente no existe o no tiene rol definido.'), nl,
-            solicitar_agente_valido(Mapa, Lista, AgenteValido)
-        )
-    ).
-
-agente_valido_en_mapa(Agente, Composiciones) :-
-    member(Compo, Composiciones),
-    member(Agente, Compo).
-
-
-
-% -------------------------
-% Flujo principal
-% -------------------------
-
-jugar :-
-    write('¿Que mapa se va a jugar?'), nl,
-    read(Mapa),
-    (composiciones(Mapa, Lista) ->
-        nl, write('Estas son las composiciones disponibles para '), write(Mapa), write(':'), nl,
-        mostrar_mapa_completo(Mapa), nl,
-        solicitar_agente_valido(Mapa, Lista, AgenteValido),
-        filtrar_composiciones(Lista, AgenteValido, Filtradas),
-        mostrar_lista(Filtradas, 1),
-        elegir_compo(Filtradas, CompoElegida),
-        write('Elegiste la composición: '), write(CompoElegida), nl,
-        analizar_sinergias(CompoElegida)
-    ;
-        write('Ese mapa no tiene composiciones registradas.'), nl
-    ).
-
-
-% -------------------------
-% Filtros y utilidades
-% -------------------------
-
-filtrar_composiciones([], _, []).
-filtrar_composiciones([Compo|T], Agente, [Compo|Resto]) :-
-    member(Agente, Compo),
-    filtrar_composiciones(T, Agente, Resto).
-filtrar_composiciones([_|T], Agente, Resto) :-
-    filtrar_composiciones(T, Agente, Resto).
-
-mostrar_lista([], _).
-mostrar_lista([H|T], N) :-
-    write('Opcion '), write(N), write(': '), write(H), nl,
-    N2 is N + 1,
-    mostrar_lista(T, N2).
-
-elegir_compo(Lista, Compo) :-
-    write('¿Que numero de composicion quieres usar?'), nl,
-    read(Num),
-    nth1(Num, Lista, Compo).
-
-mostrar_mapa_completo(Mapa) :-
-    composiciones(Mapa, Lista),
-    write('Composiciones para el mapa '), write(Mapa), write(':'), nl,
-    mostrar_lista(Lista, 1).
-
-
-% -------------------------
-% Análisis de sinergias
-% -------------------------
-
-analizar_sinergias([]).
-analizar_sinergias([A|T]) :-
-    comparar_con_otros(A, T),
-    analizar_sinergias(T).
-
-comparar_con_otros(_, []).
-comparar_con_otros(A1, [A2|Resto]) :-
-    (sinergia(A1, A2, Msg) ->
-        write('Sinergia entre '), write(A1), write(' y '), write(A2), write(': '), write(Msg), nl
-    ; sinergia(A2, A1, Msg2) ->
-        write('Sinergia entre '), write(A2), write(' y '), write(A1), write(': '), write(Msg2), nl
-    ; true),
-    comparar_con_otros(A1, Resto).
-
+sinergia(clove, gekko, 'Clove controla visi�n con smokes + Gekko molesta con Wingman y Dizzy').
+            
